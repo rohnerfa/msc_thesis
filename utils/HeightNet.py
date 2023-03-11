@@ -9,7 +9,7 @@ from utils.nest2 import NestNet2
 
 class MLP(torch.nn.Module):
 
-    def __init__(self, n_width, n_layers, input_dim, output_dim, seed):
+    def __init__(self, n_width, n_layers, input_dim, output_dim, seed, **kwargs):
         super(MLP, self).__init__()
         self.n_width = n_width
         self.n_layers = n_layers

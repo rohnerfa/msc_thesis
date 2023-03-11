@@ -119,7 +119,7 @@ if not skip_retrain:
     train_dict_2 = {}
     train_dict_3 = {}
 
-    for k in range(1,n_retrain):
+    for k in range(n_retrain):
         train_hyperparams['seed'] = k
         test_error, training_time = run_config(data_dict, model_hyperparams_1, train_hyperparams, path)
         train_dict_1['run_'+str(k)] = {'test_error': test_error,

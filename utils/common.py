@@ -49,7 +49,7 @@ class MLP(torch.nn.Module):
 
 
 class NN(pl.LightningModule):
-    def __init__(self, network, learning_rate):
+    def __init__(self, network, learning_rate=0.001):
         super().__init__()
         self.network = network
         self.learning_rate = learning_rate

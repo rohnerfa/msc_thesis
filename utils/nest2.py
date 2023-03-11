@@ -2,7 +2,7 @@ import torch
 from utils.act1 import Height1Net
 
 class NestNet2(torch.nn.Module):
-    def __init__(self, n_width, n_layers, input_dim, output_dim, seed):
+    def __init__(self, n_width, n_layers, input_dim, output_dim, seed, **kwargs):
         super(NestNet2, self).__init__()
         self.n_width = n_width
         self.n_layers = n_layers

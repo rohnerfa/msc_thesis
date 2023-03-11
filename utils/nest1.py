@@ -33,7 +33,7 @@ class ActivationNet(torch.nn.Module):
                     m.bias.data.zero_()
 
 class NestNet(torch.nn.Module):
-    def __init__(self, n_width, n_layers, input_dim, output_dim, seed):
+    def __init__(self, n_width, n_layers, input_dim, output_dim, seed, **kwargs):
         super(NestNet, self).__init__()
         self.n_width = n_width
         self.n_layers = n_layers
