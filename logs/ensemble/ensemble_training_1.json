@@ -1,0 +1,1 @@
+[[0.0004139231168664992, 38.337226152420044, {"n_width": 30, "n_layers": 6, "n_height": 1, "input_dim": 2, "output_dim": 1, "name": "mlp"}], [0.0004536733904387802, 37.24116611480713, {"n_width": 35, "n_layers": 6, "n_height": 1, "input_dim": 2, "output_dim": 1, "name": "mlp"}]]

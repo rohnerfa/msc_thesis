@@ -7,8 +7,11 @@ def run_config(data_dict, model_hyperparams, train_hyperparams, log_path, return
     name = names[model_hyperparams['n_height']-1]
     model_hyperparams['name'] = name
     model = HeightNet(path=log_path, **train_hyperparams, **model_hyperparams, **data_dict)
-
+    
+    #model.tune()
+    #plot_model_2d(model.model)
     model.train()
+    
     model.test()
 
     if return_model:

@@ -27,7 +27,7 @@ class ActivationNet(torch.nn.Module):
     
     def _init_weights(self, m):
         if isinstance(m, torch.nn.Linear):
-            torch.manual_seed(42)
+            torch.manual_seed(0)
             torch.nn.init.kaiming_uniform_(m.weight, nonlinearity='relu')
             if m.bias is not None:
                     m.bias.data.zero_()

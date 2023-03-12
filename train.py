@@ -12,7 +12,7 @@ import json
 mode = sys.argv[1]
 skip_ensemble = (mode == 'retrain')
 skip_retrain = (mode == 'ensemble')
-print(skip_ensemble)
+
 cwd = os.getcwd()
 
 
@@ -23,7 +23,7 @@ if not skip_ensemble:
 
     data_hyperparams = {
             'n_peaks': 5,
-            'n_train': 200,
+            'n_train': 100,
             'n_test': 500,
             'n_val': 50
         }
@@ -31,14 +31,14 @@ if not skip_ensemble:
     train_hyperparams = {
         'epochs': 80,
         'batch_size_train': 32,
-        'learning_rate': 3e-3,
-        'seed': 0
+        'learning_rate':3e-3,
+        'seed': 1
     }
 
     model_hyperparams = {
-        'n_width': [20,30],
-        'n_layers': [2,4],
-        'n_height': [1,2,3], 
+        'n_width': [20,30,35],
+        'n_layers': [4,6],
+        'n_height': [1], 
         'input_dim':[2],
         'output_dim':[1]
     }
@@ -93,7 +93,7 @@ if not skip_retrain:
 
     data_hyperparams = {
             'n_peaks': 5,
-            'n_train': 200,
+            'n_train': 100,
             'n_test': 500,
             'n_val': 50
         }
