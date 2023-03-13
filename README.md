@@ -15,7 +15,7 @@ pip install tensorflow
 ```
 Note that TensorFlow is only required to parse the TensorBoard logs.
 
-## Training: Ensemble and retraining
+## Training: ensemble and retraining
 
 In the main directory run
 
